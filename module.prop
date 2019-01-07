@@ -3,5 +3,5 @@ name=Oxy-ify
 version=v1.0
 versionCode=1
 author=MarcAnt01
-description=Get Oxygen OS wallpapers, media sounds, apps and boot animation.
+description=Get Oxygen OS boot animation, custom media, apps and OnePlus Slate font.
 minMagisk=17000
