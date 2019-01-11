@@ -17,8 +17,10 @@
 ##########################################################################################
 
 ##########################################################################################
-# Configs
+# Defines
 ##########################################################################################
+
+# NOTE: This part has to be adjusted to fit your own needs
 
 # Set to true if you need to enable Magic Mount
 # Most mods would like it to be enabled
@@ -32,6 +34,44 @@ POSTFSDATA=false
 
 # Set to true if you need late_start service script
 LATESTARTSERVICE=false
+
+# Unity Variables
+# Uncomment and change 'MINAPI' and 'MAXAPI' to the minimum and maxium android version for your mod (note that unity's minapi is 21 (lollipop) due to bash and magisk binaries)
+# Uncomment SEPOLICY if you have sepolicy patches in common/sepolicy.sh. Unity will take care of the rest
+# Uncomment DYNAMICOREO if you want libs installed to vendor for oreo and newer and system for anything older
+# Uncomment DYNAMICAPP if you want anything in $INSTALLER/system/app to be installed to the optimal app directory (/system/priv-app if it exists, /system/app otherwise)
+# Uncomment SYSOVERRIDE if you want the mod to always be installed to system (even on magisk)
+# Uncomment DEBUG if you want full debug logs (saved to SDCARD)
+MINAPI=21
+#MAXAPI=25
+#SEPOLICY=true
+#SYSOVERRIDE=true
+#DYNAMICOREO=true
+#DYNAMICAPP=true
+#DEBUG=true
+
+# Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
+unity_custom() {
+  OOS=$(grep -E "ro.product.manufacturer=OnePlus|ro.product.vendor.brand=OnePlus" $BUILDS)
+  MANUFACTURER=$(grep "ro.product.manufacturer" $BUILDS)
+  if [ "$MANUFACTURER" == "HTC" ]; then
+    BFOLDER="/system/customize/resource/"
+    BZIP="hTC_bootup.zip"
+  else
+    BFOLDER="/system/media/"
+    BZIP="bootanimation.zip"
+  fi
+  MAGISK_SIMPLE="/data/adb/magisk_simple"
+}
+
+# Things that ONLY run during an upgrade (occurs after unity_custom) - you probably won't need this
+# Note that the normal upgrade process is just an uninstall followed by an install
+unity_upgrade() {
+  :
+}
+
+
+# Custom Functions for Install AND Uninstall - You can put them here
 
 ##########################################################################################
 # Installation Message
@@ -55,8 +95,10 @@ print_modname() {
 ##########################################################################################
 
 # List all directories you want to directly replace in the system
-# Check the documentations for more info about how Magic Mount works, and why you need this
+# By default Magisk will merge your files with the original system
+# Directories listed here however, will be directly mounted to the correspond directory in the system
 
+# You don't need to remove the example below, these values will be overwritten by your own list
 # This is an example
 REPLACE="
 /system/app/Youtube
@@ -65,7 +107,7 @@ REPLACE="
 /system/framework
 "
 
-# Construct your own list here, it will override the example above
+# Construct your own list here, it will overwrite the example
 # !DO NOT! remove this if you don't need to replace anything, leave it empty as it is now
 REPLACE="
 "
@@ -74,30 +116,23 @@ REPLACE="
 # Permissions
 ##########################################################################################
 
-set_permissions() {
-  # Only some special files require specific permissions
-  # The default permissions should be good enough for most cases
+# NOTE: This part has to be adjusted to fit your own needs
 
-  # Here are some examples for the set_perm functions:
+set_permissions() {
+  # DEFAULT PERMISSIONS, DON'T REMOVE THEM
+  $MAGISK && set_perm_recursive $MODPATH 0 0 0755 0644
+
+  # CUSTOM PERMISSIONS
+
+  # Some templates if you have no idea what to do:
+  # Note that all files/folders have the $UNITY prefix - keep this prefix on all of your files/folders
+  # Also note the lack of '/' between variables - preceding slashes are already included in the variables
+  # Use $SYS for system and $VEN for vendor (Do not use $SYS$VEN, the $VEN is set to proper vendor path already - could be /vendor, /system/vendor, etc.)
 
   # set_perm_recursive  <dirname>                <owner> <group> <dirpermission> <filepermission> <contexts> (default: u:object_r:system_file:s0)
-  # set_perm_recursive  $MODPATH/system/lib       0       0       0755            0644
+  # set_perm_recursive $UNITY$SYS/lib 0 0 0755 0644
+  # set_perm_recursive $UNITY$VEN/lib/soundfx 0 0 0755 0644
 
   # set_perm  <filename>                         <owner> <group> <permission> <contexts> (default: u:object_r:system_file:s0)
-  # set_perm  $MODPATH/system/bin/app_process32   0       2000    0755         u:object_r:zygote_exec:s0
-  # set_perm  $MODPATH/system/bin/dex2oat         0       2000    0755         u:object_r:dex2oat_exec:s0
-  # set_perm  $MODPATH/system/lib/libart.so       0       0       0644
-
-  # The following is default permissions, DO NOT remove
-  set_perm_recursive  $MODPATH  0  0  0755  0644
+  # set_perm $UNITY$SYS/lib/libart.so 0 0 0644
 }
-
-##########################################################################################
-# Custom Functions
-##########################################################################################
-
-# This file (config.sh) will be sourced by the main flash script after util_functions.sh
-# If you need custom logic, please add them here as functions, and call these functions in
-# update-binary. Refrain from adding code directly into update-binary, as it will make it
-# difficult for you to migrate your modules to newer template versions.
-# Make update-binary as clean as possible, try to only do function calls in it.
