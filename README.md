@@ -8,4 +8,5 @@ A fantastic Magisk Module that will turn your device into a OnePlus flagship by 
 
 # Credits
 
-[Santiago Pintos](https://github.com/SantiagoPintos) for OnePlus Slate font.
+- [Santiago Pintos](https://github.com/SantiagoPintos) for OnePlus Slate font;
+- [Tadi](https://github.com/TadiT7) for xml stuff to get Play Store updates for OP Gallery.
