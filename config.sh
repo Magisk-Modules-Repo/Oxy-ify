@@ -42,10 +42,11 @@ LATESTARTSERVICE=false
 print_modname() {
   ui_print " "
   ui_print "    *******************************************"
-  ui_print "    *<name>*"
+  ui_print "    *Oxy-ify*"
   ui_print "    *******************************************"
-  ui_print "    *<version>*"
-  ui_print "    *<author>*"
+  ui_print "    *version 1.1*"
+  ui_print "    *******************************************"
+  ui_print "    *by MarcAnt01>*"
   ui_print "    *******************************************"
   ui_print " "
 }
