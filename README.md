@@ -6,7 +6,7 @@ A fantastic Magisk Module that will turn your device into a OnePlus flagship by 
 - Oxygen OS apps (Camera, Gallery, Weather);
 - OnePlus Slate font.
 
-# [Download](https://1drv.ms/f/s!Ag2j6e4vFa5YsGTwQrUxajZRc6Sh)
+# [Download](https://drive.google.com/drive/folders/1SXI5AMUND_BKF-J-w-SVGQtzR8E8sS3F)
 
 # Credits
 
