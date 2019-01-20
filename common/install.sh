@@ -15,7 +15,7 @@ fi
 
 ui_print " "
 ui_print " - Boot Animation Option -"
-ui_print "   Do you want to enable the bootanimation?"
+ui_print "   Do you want Oxygen OS boot animation?"
 ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
@@ -29,7 +29,7 @@ fi
 
 ui_print " "
 ui_print " - Font Option -"
-ui_print "   Do you want to enable the custom fonts?"
+ui_print "   Do you want OnePlus Slate font?"
 ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
@@ -42,26 +42,26 @@ fi
 
 ui_print " "
 ui_print " - Ringtone Option -"
-ui_print "   Do you want to enable the custom ringtones?"
+ui_print "   Do you want Oxygen OS custom media sounds (ringtones, alarms, notification and UI sounds)? "
 ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
-  ui_print "   Enabling custom ringtones..."
+  ui_print "   Enabling custom media sounds..."
 else
   ui_print " "
-  ui_print "   Disabling custom ringtones..."
+  ui_print "   Disabling custom media sounds..."
   rm -rf $INSTALLER/system/media/audio
 fi
 
 ui_print " "
 ui_print " - App Option -"
-ui_print "   Do you want to enable the custom apps?"
+ui_print "   Do you want OnePlus apps (Camera, Gallery and Weather?"
 ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
-  ui_print "   Enabling custom apps..."
+  ui_print "   Enabling OnePlus apps..."
 else
   ui_print " "
-  ui_print "   Disabling custom apps..."
+  ui_print "   Disabling OnePlus apps..."
   rm -rf $INSTALLER/system/priv-app/
 fi
