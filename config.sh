@@ -48,7 +48,6 @@ unity_upgrade() {
     BFOLDER="/system/media/"
     BZIP="bootanimation.zip"
   fi
-  MAGISK_SIMPLE="/data/adb/magisk_simple"
 }
 
 # Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
