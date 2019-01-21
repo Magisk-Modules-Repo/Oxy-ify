@@ -53,7 +53,7 @@ else
   rm -rf $INSTALLER/system/media/audio
 fi
 
-if [ $API -ge 27 ]; then
+if [ $API -ge 27 ] && [ $ARCH = "arm64" ]; then
   ui_print " "
   ui_print " - App Option -"
   ui_print "   Do you want OnePlus apps (Camera, Gallery and Weather?"
@@ -66,4 +66,6 @@ if [ $API -ge 27 ]; then
     ui_print "   Disabling OnePlus apps..."
     rm -rf $INSTALLER/system/priv-app/
   fi
+else
+  rm -rf $INSTALLER/system/priv-app/
 fi
