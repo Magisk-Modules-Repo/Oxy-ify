@@ -20,8 +20,8 @@ ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
   ui_print "   Enabling boot animation..."
-  mkdir -p $MAGISK_SIMPLE$BFOLDER
-  cp -f $INSTALLER/common/options/bootanimation.zip $MAGISK_SIMPLE$BFOLDER$BZIP
+  mkdir -p $UNITY$BFOLDER$BZIP
+  cp -f $INSTALLER/common/options/bootanimation.zip $UNITY$BFOLDER$BZIP
 else
   ui_print " "
   ui_print "   Disabling boot animation..."
@@ -53,15 +53,19 @@ else
   rm -rf $INSTALLER/system/media/audio
 fi
 
-ui_print " "
-ui_print " - App Option -"
-ui_print "   Do you want OnePlus apps (Camera, Gallery and Weather?"
-ui_print "   Vol Up = Yes, Vol Down = No"
-if $VKSEL; then
+if [ $API -ge 27 ] && [ $ARCH = "arm64" ]; then
   ui_print " "
-  ui_print "   Enabling OnePlus apps..."
+  ui_print " - App Option -"
+  ui_print "   Do you want OnePlus apps (Camera, Gallery and Weather?"
+  ui_print "   Vol Up = Yes, Vol Down = No"
+  if $VKSEL; then
+    ui_print " "
+    ui_print "   Enabling OnePlus apps..."
+  else
+    ui_print " "
+    ui_print "   Disabling OnePlus apps..."
+    rm -rf $INSTALLER/system/priv-app/
+  fi
 else
-  ui_print " "
-  ui_print "   Disabling OnePlus apps..."
   rm -rf $INSTALLER/system/priv-app/
 fi

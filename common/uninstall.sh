@@ -1,4 +1,4 @@
-if [ -f "$MAGISK_SIMPLE$BFOLDER$BZIP" ]; then
-  ui_print "   Removing $MAGISK_SIMPLE$BFOLDER$BZIP"
-  rm -f "$MAGISK_SIMPLE$BFOLDER$BZIP"
+if [ -f "$UNITY$BFOLDER$BZIP$BZIP" ]; then
+  ui_print "   Removing $UNITY$BFOLDER$BZIP$BZIP"
+  rm -f "$UNITY$BFOLDER$BZIP$BZIP"
 fi
