@@ -41,11 +41,14 @@ print_modname() {
 unity_upgrade() {
   OOS=$(grep -E "ro.product.manufacturer=OnePlus|ro.product.vendor.brand=OnePlus" $BUILDS)
   MANUFACTURER=$(grep "ro.product.manufacturer" $BUILDS)
+  if [ ! -d /data/adb/magisk_simple ]; then
+    mkdir -p /data/adb/magisk_simple 2>/dev/null
+  fi
   if [ "$MANUFACTURER" == "HTC" ]; then
-    BFOLDER="/system/customize/resource/"
+    BFOLDER="/data/adb/magisk_simple/system/customize/resource/"
     BZIP="hTC_bootup.zip"
   else
-    BFOLDER="/system/media/"
+    BFOLDER="/data/adb/magisk_simple/system/media/"
     BZIP="bootanimation.zip"
   fi
 }

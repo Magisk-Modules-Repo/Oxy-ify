@@ -20,11 +20,17 @@ ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
   ui_print "   Enabling boot animation..."
-  mkdir -p $UNITY$BFOLDER$BZIP
-  cp -f $INSTALLER/common/options/bootanimation.zip $UNITY$BFOLDER$BZIP
+  if [ -d /data/adb/magisk_simple ]; then
+    cp -f $INSTALLER/custom/bootanimation.zip $BFOLDER$BZIP
+  else
+    ui_print "   [!] Bootanimation not applied! Missing Path!"
+  fi
 else
   ui_print " "
   ui_print "   Disabling boot animation..."
+  if [ -f $BFOLDER$BZIP ]; then
+    rm -rf /data/adb/masgik_simple/system 2>/dev/null
+  fi
 fi
 
 ui_print " "
