@@ -10,7 +10,7 @@ A fantastic Magisk Module that will turn your device into a OnePlus flagship by 
 
 # How to reach me out
 - [XDA thread](https://forum.xda-developers.com/apps/magisk/oxy-ify-magisk-module-add-oxygen-os-t3888094);
-- [Telegram support group](t.me/oxyify).
+- [Telegram support group](https://t.me/oxyify).
 
 # Credits
 - [Santiago Pintos](https://github.com/SantiagoPintos) for OnePlus Slate font.
