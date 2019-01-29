@@ -59,10 +59,10 @@ else
   rm -rf $INSTALLER/system/media/audio
 fi
 
-if [ $API -ge 27 ] && [ $ARCH = "arm64" ]; then
+if [ $API -ge 24 ]; then
   ui_print " "
   ui_print " - App Option -"
-  ui_print "   Do you want OnePlus apps (Camera, Gallery and Weather?"
+  ui_print "   Do you want OnePlus apps (Camera, Gallery and Weather)?"
   ui_print "   Vol Up = Yes, Vol Down = No"
   if $VKSEL; then
     ui_print " "
