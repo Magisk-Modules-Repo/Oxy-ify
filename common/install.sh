@@ -1,6 +1,7 @@
 if [ "$OOS" ]; then
   ui_print " "
   ui_print "   Oxy-ify is only for non-OOS devices!"
+  ui_print "   Why would you need this stuff if you are already in Oxygen OS?"
   ui_print "   DO YOU WANT TO IGNORE OUR WARNINGS AND RISK A BOOTLOOP?"
   ui_print "   Vol Up = Yes, Vol Down = No"
   if $VKSEL; then
@@ -16,6 +17,7 @@ fi
 ui_print " "
 ui_print " - Boot Animation Option -"
 ui_print "   Do you want Oxygen OS boot animation?"
+ui_print "   (boot animation may not work in some devices)"
 ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
@@ -39,16 +41,17 @@ ui_print "   Do you want OnePlus Slate font?"
 ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
-  ui_print "   Enabling custom fonts..."
+  ui_print "   Enabling font..."
 else
   ui_print " "
-  ui_print "   Disabling custom fonts..."
+  ui_print "   Disabling font..."
   rm -rf $INSTALLER/system/fonts
 fi
 
 ui_print " "
 ui_print " - Ringtone Option -"
-ui_print "   Do you want Oxygen OS custom media sounds (ringtones, alarms, notification and UI sounds)? "
+ui_print "   Do you want Oxygen OS custom media sounds?"
+ui_print "   They include ringtones, alarms, notifications and UI sounds"
 ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
