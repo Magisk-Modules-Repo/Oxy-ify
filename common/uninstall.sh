@@ -1,4 +1,4 @@
-if [ -f $BFOLDER$BZIP ]; then
-  ui_print "   Removing $BFOLDER$BZIP"
-  rm -rf /data/adb/magisk_simple/system 2>/dev/null
+if [ -f "$MAGISK_SIMPLE$BFOLDER$BZIP" ]; then
+  ui_print "   Removing $MAGISK_SIMPLE$BFOLDER$BZIP"
+  rm -f "$MAGISK_SIMPLE$BFOLDER$BZIP"
 fi

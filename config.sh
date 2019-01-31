@@ -18,6 +18,7 @@ print_modname() {
   ui_print "    *******************************************"
   ui_print "    *by MarcAnt01>*"
   ui_print "    *******************************************"
+  ui_print "    Starting Unity installer"
   ui_print " "
 }
 
@@ -41,17 +42,15 @@ print_modname() {
 unity_upgrade() {
   OOS=$(grep -E "ro.product.manufacturer=OnePlus|ro.product.vendor.brand=OnePlus" $BUILDS)
   MANUFACTURER=$(grep "ro.product.manufacturer" $BUILDS)
-  if [ ! -d /data/adb/magisk_simple ]; then
-    mkdir -p /data/adb/magisk_simple 2>/dev/null
-  fi
   if [ "$MANUFACTURER" == "HTC" ]; then
-    BFOLDER="/data/adb/magisk_simple/system/customize/resource/"
-    BZIP="hTC_bootup.zip"
-  else
-    BFOLDER="/data/adb/magisk_simple/system/media/"
-    BZIP="bootanimation.zip"
-  fi
-}
+   BFOLDER="/system/customize/resource/"
+   BZIP="hTC_bootup.zip"
+ else
+   BFOLDER="/system/media/"
+   BZIP="bootanimation.zip"
+ fi
+ MAGISK_SIMPLE="/data/adb/magisk_simple"
+
 
 # Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
 unity_custom() {
