@@ -1,7 +1,7 @@
 id=Oxy-ify
 name=Oxy-ify
-version=v2.0
-versionCode=3
+version=v2.1
+versionCode=4
 author=MarcAnt01
 description=Get Oxygen OS boot animation, custom media, apps and OnePlus Slate font.
 minMagisk=17000
