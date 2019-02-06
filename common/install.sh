@@ -1,4 +1,4 @@
-if [ "$OOS" ]; then
+if [ -n "$OOS" ]; then
   ui_print " "
   ui_print "   Oxy-ify is only for non-OOS devices!"
   ui_print "   Why would you need this stuff if you are already in Oxygen OS?"
@@ -22,8 +22,8 @@ ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
   ui_print "   Enabling boot animation..."
-  mkdir -p $MAGISK_SIMPLE$BFOLDER
-  cp -f $INSTALLER/common/options/bootanimation.zip $MAGISK_SIMPLE$BFOLDER$BZIP
+  mkdir -p "$MAGISK_SIMPLE""$BFOLDER"
+  cp -f "$INSTALLER"/common/options/bootanimation.zip "$MAGISK_SIMPLE""$BFOLDER""$BZIP"
 else
   ui_print " "
   ui_print "   Disabling boot animation..."
@@ -39,7 +39,7 @@ if $VKSEL; then
 else
   ui_print " "
   ui_print "   Disabling font..."
-  rm -rf $INSTALLER/system/fonts
+  rm -rf "$INSTALLER"/system/fonts
 fi
 
 ui_print " "
@@ -53,10 +53,10 @@ if $VKSEL; then
 else
   ui_print " "
   ui_print "   Disabling custom media sounds..."
-  rm -rf $INSTALLER/system/media/audio
+  rm -rf "$INSTALLER"/system/media/audio
 fi
 
-if [ $API -ge 24 ]; then
+if [ "$API" -ge 24 ]; then
   ui_print " "
   ui_print " - App Option -"
   ui_print "   Do you want OnePlus apps (Camera, Gallery and Weather)?"
@@ -67,8 +67,8 @@ if [ $API -ge 24 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus apps..."
-    rm -rf $INSTALLER/system/priv-app/
+    rm -rf "$INSTALLER"/system/priv-app/
   fi
 else
-  rm -rf $INSTALLER/system/priv-app/
+  rm -rf "$INSTALLER"/system/priv-app/
 fi
