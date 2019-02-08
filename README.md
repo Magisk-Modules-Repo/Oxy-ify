@@ -19,4 +19,5 @@ Visit [the Oxy-ify wiki](https://github.com/MarcAnt01/Oxy-ify/wiki) for further 
 - [Santiago Pintos](https://github.com/SantiagoPintos) for OnePlus Slate font.
 - [Tadi](https://github.com/TadiT7) for xml stuff to get Play Store updates for OP Gallery.
 - [thehappydinoa](https://github.com/thehappydinoa) for Unity implementation.
+- [erayrafet](https://forum.xda-developers.com/member.php?u=6901118) for modded OnePlus Sounds Recorder and OnePlus Widget.
 - [Zackptg5](https://github.com/Zackptg5) for creating Unity installer.
