@@ -16,6 +16,7 @@ fi
 
 ui_print " "
 ui_print " - Boot Animation Option -"
+ui_print " *******************************************"
 ui_print "   Do you want to enable Oxygen OS boot animation?"
 ui_print "   (boot animation may not work for some devices)"
 ui_print "   Vol Up = Yes, Vol Down = No"
@@ -31,6 +32,7 @@ fi
 
 ui_print " "
 ui_print " - Font Option -"
+ui_print " *******************************************"
 ui_print "   Do you want OnePlus Slate font?"
 ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
@@ -44,8 +46,10 @@ fi
 
 ui_print " "
 ui_print " - Ringtone Option -"
+ui_print " *******************************************"
 ui_print "   Do you want Oxygen OS custom media sounds?"
-ui_print "   They include ringtones, alarms, notifications and UI sounds"
+ui_print "   They include ringtones, alarms, notifications"
+ui_print "   and UI sounds"
 ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
@@ -59,7 +63,10 @@ fi
 if [ "$API" -ge 24 ]; then
   ui_print " "
   ui_print " - App Option -"
-  ui_print "   Do you want OnePlus apps (Camera, Gallery and Weather)?"
+  ui_print " *******************************************"
+  ui_print "   Do you want OnePlus apps?"
+  ui_print "   Included apps are Camera, Gallery, Sound Recorder,"
+  ui_print "   Widget and Weather"
   ui_print "   Vol Up = Yes, Vol Down = No"
   if $VKSEL; then
     ui_print " "
