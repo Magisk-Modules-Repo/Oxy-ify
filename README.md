@@ -10,9 +10,36 @@ Oxy-ify is a fantastic Magisk Module that will turn your Android phone into a On
 
 A Unity installer is included in the module. That means that you can choose to install just what you prefer during the installation process.
 
-# [Download](https://drive.google.com/drive/folders/1SXI5AMUND_BKF-J-w-SVGQtzR8E8sS3F)
+# Changelog
 
-# How to reach me out
+**Only versions after 2.2 were distributed through Magisk Modules Repo**
+
+### V 2.2
+Added modded OnePlus Widget and OnePlus Weather.
+
+### V 2.1
+- Fixed Gallery editor crash;
+- Improvements to xml;
+- Added app support for Arm32 devices;
+- Added app support for devices with Android Nougat;
+- Reverted boot animation changes;
+- Improvements to xml file.
+
+### V 2.0
+- Unity installer implementation;
+- Added some old custom sounds of Oxygen OS;
+- Changed boot animation path;
+- Boot animation now supports HTC devices;
+- Apps can now be installed with devices with at least Android 8.1 Oreo and Arm64 architecture.
+
+### V 1.1
+- Added xml (should allow OnePlus Gallery to update via Play Store);
+- Removed OnePlus launcher as led to issues.
+
+### V 1.0
+Initial release.
+
+# How to reach out to me
 - [Oxy-ify XDA thread](https://forum.xda-developers.com/apps/magisk/oxy-ify-magisk-module-add-oxygen-os-t3888094);
 - [Oxy-ify support group on Telegram](https://t.me/oxyify).
 
