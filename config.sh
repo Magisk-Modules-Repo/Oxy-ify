@@ -40,20 +40,30 @@ print_modname() {
 # A use for this would be to back up app data before it's wiped if your module includes an app
 # NOTE: the normal upgrade process is just an uninstall followed by an install
 unity_upgrade() {
+
+
+
+# Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
+unity_custom() {
+  if [ -f $VEN/build.prop ]
+  then BUILDS="/system/build.prop $VEN/build.prop"
+  BUILDS="/system/build.prop"
   OOS=$(grep -E "ro.product.manufacturer=OnePlus|ro.product.vendor.brand=OnePlus" $BUILDS)
   MANUFACTURER=$(grep "ro.product.manufacturer" $BUILDS)
   if [ "$MANUFACTURER" == "HTC" ]; then
    BFOLDER="/system/customize/resource/"
    BZIP="hTC_bootup.zip"
- else
+  else
    BFOLDER="/system/media/"
    BZIP="bootanimation.zip"
- fi
- MAGISK_SIMPLE="/data/adb/magisk_simple"
+  fi
+   MAGISK_SIMPLE="/data/adb/magisk_simple"
+fi
 
 
-# Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
-unity_custom() {
+
+
+
   : # Remove this if adding to this function
 }
 
