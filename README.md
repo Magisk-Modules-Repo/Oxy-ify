@@ -39,12 +39,19 @@ Added modded OnePlus Widget and OnePlus Weather.
 ### V 1.0
 Initial release.
 
+# Requirements
+- Magisk 17.0 or following versions;
+- Android 5.0 Lollipop or following Android versions. (Android 7.0 Nougat is required for apps installation)
+
 # How to reach out to me
 - [Oxy-ify XDA thread](https://forum.xda-developers.com/apps/magisk/oxy-ify-magisk-module-add-oxygen-os-t3888094);
 - [Oxy-ify support group on Telegram](https://t.me/oxyify).
 
 # Wiki
 Visit [the Oxy-ify wiki](https://github.com/MarcAnt01/Oxy-ify/wiki) for further information about supported devices, apps, and more.
+
+# [Donation](https://www.paypal.me/filippofedeli)
+I do not ask for any kind of donation, I just leave my PayPal donation link if you feel like.
 
 # License agreement
 All the components in this mod are protected under the [GPL-V3 license agreement](https://github.com/MarcAnt01/Oxy-ify/blob/master/LICENSE).
