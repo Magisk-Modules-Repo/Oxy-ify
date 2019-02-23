@@ -26,7 +26,7 @@ print_modname() {
 # Defines
 ##########################################################################################
 
-# Uncomment and change 'MINAPI' and 'MAXAPI' to the minimum and maxium android version for your mod (note that unity's minapi is 21 (lollipop) due to bash)
+# Uncomment and change 'MINAPI' and 'MAXAPI' to the minimum and maxium android version for your mod (note that unity's minapi is 17) due to bash)
 # Uncomment DYNAMICOREO if you want libs installed to vendor for oreo+ and system for anything older
 # Uncomment SYSOVERRIDE if you want the mod to always be installed to system (even on magisk) - note that this can still be set to true by the user by adding 'sysover' to the zipname
 # Uncomment DEBUG if you want full debug logs (saved to /sdcard in magisk manager and the zip directory in twrp) - note that this can still be set to true by the user by adding 'debug' to the zipname
@@ -40,31 +40,22 @@ print_modname() {
 # A use for this would be to back up app data before it's wiped if your module includes an app
 # NOTE: the normal upgrade process is just an uninstall followed by an install
 unity_upgrade() {
-
-
+  : # Remove this if adding to this function
+}
 
 # Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
 unity_custom() {
-  if [ -f $VEN/build.prop ]
-  then BUILDS="/system/build.prop $VEN/build.prop"
-  BUILDS="/system/build.prop"
+  if [ -f $VEN/build.prop ]; then BUILDS="/system/build.prop $VEN/build.prop"; else BUILDS="/system/build.prop"; fi
   OOS=$(grep -E "ro.product.manufacturer=OnePlus|ro.product.vendor.brand=OnePlus" $BUILDS)
   MANUFACTURER=$(grep "ro.product.manufacturer" $BUILDS)
   if [ "$MANUFACTURER" == "HTC" ]; then
-   BFOLDER="/system/customize/resource/"
+   BFOLDER="/system/customize/resource"
    BZIP="hTC_bootup.zip"
-  else
-   BFOLDER="/system/media/"
+ else
+   BFOLDER="/system/media"
    BZIP="bootanimation.zip"
-  fi
-   MAGISK_SIMPLE="/data/adb/magisk_simple"
-fi
-
-
-
-
-
-  : # Remove this if adding to this function
+ fi
+ MAGISK_SIMPLE="/data/adb/magisk_simple"
 }
 
 # Custom Functions for Install AND Uninstall - You can put them here
