@@ -45,17 +45,7 @@ unity_upgrade() {
 
 # Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
 unity_custom() {
-  if [ -f $VEN/build.prop ]; then BUILDS="/system/build.prop $VEN/build.prop"; else BUILDS="/system/build.prop"; fi
-  OOS=$(grep -E "ro.product.manufacturer=OnePlus|ro.product.vendor.brand=OnePlus" $BUILDS)
-  MANUFACTURER=$(grep "ro.product.manufacturer" $BUILDS)
-  if [ "$MANUFACTURER" == "HTC" ]; then
-   BFOLDER="/system/customize/resource"
-   BZIP="hTC_bootup.zip"
- else
-   BFOLDER="/system/media"
-   BZIP="bootanimation.zip"
- fi
- MAGISK_SIMPLE="/data/adb/magisk_simple"
+  : # Remove this if adding to this function
 }
 
 # Custom Functions for Install AND Uninstall - You can put them here

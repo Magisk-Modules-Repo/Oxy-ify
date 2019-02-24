@@ -1,19 +1,3 @@
-if [ -n "$OOS" ]; then
-  ui_print " "
-  ui_print "   Oxy-ify is only for non-OOS devices!"
-  ui_print "   Why would you need this stuff if you are already in Oxygen OS?"
-  ui_print "   DO YOU WANT TO IGNORE OUR WARNINGS AND RISK A BOOTLOOP?"
-  ui_print "   Vol Up = Yes, Vol Down = No"
-  if $VKSEL; then
-    ui_print " "
-    ui_print "   Ignoring warnings..."
-  else
-    ui_print " "
-    ui_print "   Exiting..."
-    abort
-  fi
-fi
-
 ui_print " "
 ui_print " - Boot Animation Option -"
 ui_print " *******************************************"
