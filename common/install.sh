@@ -23,11 +23,10 @@ ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
   ui_print "   Enabling boot animation..."
-  mkdir -p "$MAGISK_SIMPLE""$BFOLDER"
-  cp -f "$INSTALLER"/common/options/bootanimation.zip "$MAGISK_SIMPLE""$BFOLDER""$BZIP"
 else
   ui_print " "
   ui_print "   Disabling boot animation..."
+  rm -rf "$INSTALLER/system/media/bootanimation.zip"
 fi
 
 ui_print " "
