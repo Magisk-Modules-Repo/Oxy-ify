@@ -14,6 +14,11 @@ A Unity installer is included in the module. That means that you can choose to i
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
+### V 2.3
+- Updated OnePlus Weather to 2.3.x;
+- Updated modded OnePlus Widget to 1.1.x;
+- Fixed boot animation applied with aborted option.
+
 ### V 2.2
 Added modded OnePlus Widget and OnePlus Weather.
 
