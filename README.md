@@ -63,10 +63,9 @@ All the components in this mod are protected under the [GPL-V3 license agreement
 The OnePlus Widget and the Sound recorder were kindly provided by [erayrafet](https://forum.xda-developers.com/member.php?u=6901118). If you intend to include those in your own mod out of Oxy-ify, first, you must ask him for a permission.
 
 # Credits
-- [Santiago Pintos](https://github.com/SantiagoPintos) for the OnePlus Slate font.
-- [erayrafet](https://forum.xda-developers.com/member.php?u=6901118) for modded OnePlus Sound Recorder and Widget.
-- [Tadi](https://github.com/TadiT7) for the xml stuff to allow receiving updates for the Gallery app via Play Store.
 - [thehappydinoa](https://github.com/thehappydinoa) for Unity implementation.
-- [Zackptg5](https://github.com/Zackptg5) for creating Unity installer.
-- [topjohnwu](https://github.com/topjohnwu) for creating Magisk.
+- [erayrafet](https://forum.xda-developers.com/member.php?u=6901118) for modded OnePlus Sound Recorder and Widget.
+- [Santiago Pintos](https://github.com/SantiagoPintos) for the OnePlus Slate font.
+- [Zackptg5](https://github.com/Zackptg5) creator of Unity installer.
+- [topjohnwu](https://github.com/topjohnwu) creator of Magisk.
 - OnePlus for providing all the stuff included here.
