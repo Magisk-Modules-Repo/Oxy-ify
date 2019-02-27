@@ -14,6 +14,11 @@ A Unity installer is included in the module. That means that you can choose to i
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
+### V 2.4
+- Fixed OnePlus Weather crash;
+- Updated Sound Recorder to 2.0;
+- Removed xml.
+
 ### V 2.3
 - Updated OnePlus Weather to 2.3.x;
 - Updated modded OnePlus Widget to 1.1.x;
