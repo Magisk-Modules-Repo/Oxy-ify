@@ -50,12 +50,14 @@ Added modded OnePlus Widget and OnePlus Weather.
 Initial release.
 
 # Requirements
-- Magisk 17.0 or following versions;
-- Android 5.0 Lollipop or following Android versions. (Android 7.0 Nougat is required for apps installation)
+-   [![Magisk](https://img.shields.io/badge/Magisk-17%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
+-   [![Android Lollipop+](https://img.shields.io/badge/Lollipop-5.0+-lightgrey.svg)](https://www.android.com/versions/lollipop-5-0/)
+-   [![Android Oreo+](https://img.shields.io/badge/Oreo-8.1+-blue.svg)](https://www.android.com/versions/oreo-8-0/) for apps
 
 # How to reach out to me
-- [Oxy-ify XDA thread](https://forum.xda-developers.com/apps/magisk/oxy-ify-magisk-module-add-oxygen-os-t3888094);
-- [Oxy-ify support group on Telegram](https://t.me/oxyify).
+-   [![Thread XDA](https://img.shields.io/badge/XDA-Thread-orange.svg)](https://forum.xda-developers.com/apps/magisk/oxy-ify-magisk-module-add-oxygen-os-t3888094)
+-   [![Telegram Group](https://img.shields.io/badge/Telegram-Group-blue.svg)](https://t.me/Oxyify)
+
 
 # Wiki
 Visit [the Oxy-ify wiki](https://github.com/MarcAnt01/Oxy-ify/wiki) for further information about supported devices, apps, and more.
