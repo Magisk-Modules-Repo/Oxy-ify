@@ -7,6 +7,7 @@ ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
   ui_print "   Enabling boot animation..."
+  pm uninstall -k <com.google.android.soundpicker>
 else
   ui_print " "
   ui_print "   Disabling boot animation..."
