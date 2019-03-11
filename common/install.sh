@@ -28,7 +28,7 @@ else
 fi
 
 ui_print " "
-ui_print " - Ringtone Option -"
+ui_print " - Media Option -"
 ui_print " *******************************************"
 ui_print "   Do you want Oxygen OS custom media sounds?"
 ui_print "   They include ringtones, alarms, notifications"
