@@ -14,7 +14,7 @@ A Unity installer is included in the module. That means that you can choose to i
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
-### V 2.5
+### V 3.0
 - Now you can select what apps to install;
 - Added modded OnePlus launcher;
 - Now sound recorder supports Android Marshmallow.
@@ -56,10 +56,9 @@ Initial release.
 
 # Requirements
 -   [![Magisk](https://img.shields.io/badge/Magisk-17%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
--   [![Android Lollipop+](https://img.shields.io/badge/Lollipop-5.0+-lightgrey.svg)](https://www.android.com/versions/lollipop-5-0/)
--   [![Android Oreo+](https://img.shields.io/badge/Oreo-8.1+-blue.svg)](https://www.android.com/versions/oreo-8-0/) for apps
+-   [![Android Lollipop+](https://img.shields.io/badge/Lollipop-5.0+-lightgrey.svg)](https://www.android.com/versions/lollip-5-0/)
 
-# How to reach out to me
+# How to reach out to mepo
 -   [![Thread XDA](https://img.shields.io/badge/XDA-Thread-orange.svg)](https://forum.xda-developers.com/apps/magisk/oxy-ify-magisk-module-add-oxygen-os-t3888094)
 -   [![Telegram Group](https://img.shields.io/badge/Telegram-Group-blue.svg)](https://t.me/Oxyify)
 
