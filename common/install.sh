@@ -112,6 +112,7 @@ if [ "$API" -ge 25 ]; then
 else
   rm -rf "$INSTALLER"/system/priv-app/OPWeather
   rm -rf "$INSTALLER"/system/priv-app/OPWidget
+fi
 
 if [ "$API" -ge 27 ]; then
   ui_print " "
