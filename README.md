@@ -14,6 +14,11 @@ A Unity installer is included in the module. That means that you can choose to i
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
+### V 2.5
+- Now you can select what apps to install;
+- Added modded OnePlus launcher;
+- Now sound recorder supports Android Marshmallow.
+
 ### V 2.4
 - Fixed OnePlus Weather crash;
 - Updated Sound Recorder to 2.0;
