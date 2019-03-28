@@ -60,7 +60,7 @@ else
   rm -rf "$INSTALLER"/system/priv-app/OPGallery
 fi
 
-if [ "$API" -ge 24 ]; then
+if [ "$API" -ge 26 ]; then
   ui_print " "
   ui_print " *******************************************"
   ui_print "   Do you want OnePlus Camera?"
