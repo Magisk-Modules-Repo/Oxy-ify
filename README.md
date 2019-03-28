@@ -14,11 +14,14 @@ A Unity installer is included in the module. That means that you can choose to i
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
+<<<<<<< HEAD
 ### V 3.1
 -Added Calculator (press 1+ for the easter egg);
 -Updated Camera to 3.x;
 -Updated Weather app to 2.4.x
 
+=======
+>>>>>>> 0affff33c546951ae4927b3ae31f35d1d2a51539
 ### V 3.0
 - Now you can select what apps to install;
 - Added modded OnePlus launcher;
@@ -61,7 +64,11 @@ Initial release.
 
 # Requirements
 -   [![Magisk](https://img.shields.io/badge/Magisk-17%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
+<<<<<<< HEAD
 -   [![Android Lollipop+](https://img.shields.io/badge/Lollipop-5.0+-lightgrey.svg)](https://www.android.com/versions/lollipop-5-0/)
+=======
+-   [![Android Lollipop+](https://img.shields.io/badge/Lollipop-5.0+-lightgrey.svg)](https://www.android.com/versions/lollip-5-0/)
+>>>>>>> 0affff33c546951ae4927b3ae31f35d1d2a51539
 
 # How to reach out to me
 -   [![Thread XDA](https://img.shields.io/badge/XDA-Thread-orange.svg)](https://forum.xda-developers.com/apps/magisk/oxy-ify-magisk-module-add-oxygen-os-t3888094)
