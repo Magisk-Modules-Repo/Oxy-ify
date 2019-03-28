@@ -130,3 +130,20 @@ if [ "$API" -ge 27 ]; then
 else
   rm -rf "$INSTALLER"/system/priv-app/OPLauncher
 fi
+
+if [ "$API" -ge 23 ]; then
+  ui_print " "
+  ui_print " *******************************************"
+  ui_print "   Do you want OnePlus Calculator?"
+  ui_print "   Vol Up = Yes, Vol Down = No"
+  if $VKSEL; then
+    ui_print " "
+    ui_print "   Enabling OnePlus Calculator..."
+  else
+    ui_print " "
+    ui_print "   Disabling OnePlus Calculator..."
+    rm -rf "$INSTALLER"/system/priv-app/OPCalculator
+  fi
+else
+  rm -rf "$INSTALLER"/system/priv-app/OPCalculator
+fi
