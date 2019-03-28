@@ -15,9 +15,9 @@ A Unity installer is included in the module. That means that you can choose to i
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
 ### V 3.1
--Added Calculator (press 1+ for the easter egg);
--Updated Camera to 3.x;
--Updated Weather app to 2.4.x
+- Added Calculator (press 1+ for the easter egg);
+- Updated Camera to 3.x;
+- Updated Weather app to 2.4.x
 
 ### V 3.0
 - Now you can select what apps to install;
