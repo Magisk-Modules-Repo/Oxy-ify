@@ -14,6 +14,10 @@ A Unity installer is included in the module. That means that you can choose to i
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
+### V 3.2
+- Update Gallery to 3.1.x;
+- Reverted old Camera (new one was giving problems to most users)
+
 ### V 3.1
 - Added Calculator (press 1+ for the easter egg);
 - Updated Camera to 3.x;
