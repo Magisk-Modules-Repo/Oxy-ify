@@ -10,7 +10,7 @@ if $VKSEL; then
 else
   ui_print " "
   ui_print "   Disabling boot animation..."
-  rm -rf "$INSTALLER/system/media/bootanimation.zip"
+  rm -rf "$TMPDIR/system/media/bootanimation.zip"
 fi
 
 ui_print " "
@@ -24,7 +24,7 @@ if $VKSEL; then
 else
   ui_print " "
   ui_print "   Disabling font..."
-  rm -rf "$INSTALLER"/system/fonts
+  rm -rf "$TMPDIR"/system/fonts
 fi
 
 ui_print " "
@@ -40,7 +40,7 @@ if $VKSEL; then
 else
   ui_print " "
   ui_print "   Disabling custom media sounds..."
-  rm -rf "$INSTALLER"/system/media/audio
+  rm -rf "$TMPDIR"/system/media/audio
 fi
 
 if [ "$API" -ge 27 ]; then
@@ -54,10 +54,10 @@ if [ "$API" -ge 27 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus Gallery..."
-    rm -rf "$INSTALLER"/system/priv-app/OPGallery
+    rm -rf "$TMPDIR"/system/priv-app/OPGallery
   fi
 else
-  rm -rf "$INSTALLER"/system/priv-app/OPGallery
+  rm -rf "$TMPDIR"/system/priv-app/OPGallery
 fi
 
 if [ "$API" -ge 24 ]; then
@@ -71,10 +71,10 @@ if [ "$API" -ge 24 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus Camera..."
-    rm -rf "$INSTALLER"/system/priv-app/OPCamera
+    rm -rf "$TMPDIR"/system/priv-app/OPCamera
   fi
 else
-  rm -rf "$INSTALLER"/system/priv-app/OPCamera
+  rm -rf "$TMPDIR"/system/priv-app/OPCamera
 fi
 
 if [ "$API" -ge 23 ]; then
@@ -88,10 +88,10 @@ if [ "$API" -ge 23 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus Sound Recorder..."
-    rm -rf "$INSTALLER"/system/priv-app/OPRecorder
+    rm -rf "$TMPDIR"/system/priv-app/OPRecorder
   fi
 else
-  rm -rf "$INSTALLER"/system/priv-app/OPRecorder
+  rm -rf "$TMPDIR"/system/priv-app/OPRecorder
 fi
 
 if [ "$API" -ge 25 ]; then
@@ -106,12 +106,12 @@ if [ "$API" -ge 25 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus Weather..."
-    rm -rf "$INSTALLER"/system/priv-app/OPWeather
-    rm -rf "$INSTALLER"/system/priv-app/OPWidget
+    rm -rf "$TMPDIR"/system/priv-app/OPWeather
+    rm -rf "$TMPDIR"/system/priv-app/OPWidget
   fi
 else
-  rm -rf "$INSTALLER"/system/priv-app/OPWeather
-  rm -rf "$INSTALLER"/system/priv-app/OPWidget
+  rm -rf "$TMPDIR"/system/priv-app/OPWeather
+  rm -rf "$TMPDIR"/system/priv-app/OPWidget
 fi
 
 if [ "$API" -ge 27 ]; then
@@ -125,10 +125,10 @@ if [ "$API" -ge 27 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus Launcher..."
-    rm -rf "$INSTALLER"/system/priv-app/OPLauncher
+    rm -rf "$TMPDIR"/system/priv-app/OPLauncher
   fi
 else
-  rm -rf "$INSTALLER"/system/priv-app/OPLauncher
+  rm -rf "$TMPDIR"/system/priv-app/OPLauncher
 fi
 
 if [ "$API" -ge 23 ]; then
@@ -142,8 +142,8 @@ if [ "$API" -ge 23 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus Calculator..."
-    rm -rf "$INSTALLER"/system/priv-app/OPCalculator
+    rm -rf "$TMPDIR"/system/priv-app/OPCalculator
   fi
 else
-  rm -rf "$INSTALLER"/system/priv-app/OPCalculator
+  rm -rf "$TMPDIR"/system/priv-app/OPCalculator
 fi
