@@ -99,7 +99,7 @@ set_permissions() {
 
 # Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
 unity_custom() {
-  : # Remove this if adding to this function
+  PIXEL=$(grep -E "ro.product.manufacturer=Google|ro.product.vendor.brand=Google" "$BUILDS")
 }
 
 # Custom Functions for Install AND Uninstall - You can put them here
