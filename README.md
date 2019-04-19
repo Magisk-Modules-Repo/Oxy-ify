@@ -14,6 +14,12 @@ A Unity installer is included in the module. That means that you can choose to i
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
+### V 4.0
+- Updated to new Magisk Module Installer Template;
+- Blacklisted Google Pixel devices;
+- OP Gallery bug fixes;
+- Removed ui sounds.
+
 ### V 3.2
 - Update Gallery to 3.1.x;
 - Reverted old Camera (new one was giving problems to most users)
