@@ -8,7 +8,7 @@ Oxy-ify is a fantastic Magisk Module that will turn your Android phone into a On
 - the OnePlus Widget;
 - the OnePlus Slate font.
 
-A Unity installer is included in the module. That means that you can choose to install just what you prefer during the installation process.
+This module uses **Unity** template with volume keys addon. That means that you can choose to install just what you prefer during the installation process.
 
 # Changelog
 
@@ -70,7 +70,7 @@ Added modded OnePlus Widget and OnePlus Weather.
 Initial release.
 
 # Requirements
--   [![Magisk](https://img.shields.io/badge/Magisk-17%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
+-   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
 -   [![Android Lollipop+](https://img.shields.io/badge/Lollipop-5.0+-lightgrey.svg)](https://www.android.com/versions/lollipop-5-0/)
 
 All AOSP-based Roms and stock Roms are supported, even MIUI and EMUI.
@@ -92,10 +92,11 @@ All the components in this mod are protected under the [GPL-V3 license agreement
 The OnePlus Widget and the Sound recorder were kindly provided by [erayrafet](https://forum.xda-developers.com/member.php?u=6901118). If you intend to include those in your own mod out of Oxy-ify, first, you must ask him for a permission.
 
 # Credits
-- [thehappydinoa](https://github.com/thehappydinoa) for Unity implementation.
+- [thehappydinoa](https://github.com/thehappydinoa) for initial Unity implementation.
+- [JohnFawkes](https://github.com/JohnFawkes) for helping me to solve bugs.
 - [erayrafet](https://forum.xda-developers.com/member.php?u=6901118) for modded OnePlus Sound Recorder and Widget.
 - [Santiago Pintos](https://github.com/SantiagoPintos) for the OnePlus Slate font.
 - [paphonb](https://github.com/paphonb) for modded OnePlus Launcher.
-- [Zackptg5](https://github.com/Zackptg5) creator of Unity installer.
-- [topjohnwu](https://github.com/topjohnwu) creator of Magisk.
+- [Zackptg5](https://github.com/Zackptg5) for Unity template.
+- [topjohnwu](https://github.com/topjohnwu) for Magisk.
 - OnePlus for providing all the stuff included here.
