@@ -16,6 +16,26 @@ if [ -n "$PIXEL" ]; then
   fi
 fi
 
+if [ -n "$SAMSUNG" ]; then
+  ui_print " "
+  ui_print "   Oxy-ify doesn't support Samsung devices on stock Rom!"
+  ui_print "   DO NOT ATTEMPT TO INSTALL ON STOCK ROM, YOU'LL HAVE A BOOTLOOP"
+  ui_print "   If flashed on a Custom Rom you won't have problems"
+  ui_print "   *******************************************"
+  ui_print "   Are you using a Custom Rom and do you want to install it?"
+  ui_print "   Vol Up = Yes, Vol Down = No"
+  if $FUNCTION; then
+    ui_print " "
+    ui_print "   Ignoring warnings..."
+  else
+    ui_print " "
+    ui_print "   Exiting..."
+    abort
+  fi
+fi
+
+
+
 ui_print " "
 ui_print " - Boot Animation Option -"
 ui_print " *******************************************"
