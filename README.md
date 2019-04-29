@@ -14,8 +14,13 @@ This module uses **Unity** template with volume keys addon. That means that you 
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
+### V 4.1
+- Added default ringtone, notification sound and alarm;
+- Fixed conflicts with Google Sounds;
+- Blacklisted Samsung devices;
+
 ### V 4.0
-- Updated to new Magisk Module Installer Template;
+- Updated to Unity 4-0 and new Magisk Module Installer Template;
 - Blacklisted Google Pixel devices;
 - OP Gallery bug fixes;
 - Removed ui sounds.
