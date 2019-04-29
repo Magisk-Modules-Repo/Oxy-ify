@@ -1,0 +1,4 @@
+# This file will change default ringtone, notification sound and alarm if choosing media option
+ro.config.ringtone=oneplus_tune.ogg
+ro.config.notification_sound=meet.ogg
+ro.config.alarm_alert=spring.ogg

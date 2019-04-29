@@ -75,6 +75,7 @@ ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
   ui_print "   Enabling custom media sounds..."
+  prop_process propslg.prop
 else
   ui_print " "
   ui_print "   Disabling custom media sounds..."
