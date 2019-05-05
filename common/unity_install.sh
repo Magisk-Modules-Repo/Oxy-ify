@@ -6,7 +6,7 @@ if [ -n "$PIXEL" ]; then
   ui_print "   *******************************************"
   ui_print "   Are you using a Custom Rom and do you want to install it?"
   ui_print "   Vol Up = Yes, Vol Down = No"
-  if $FUNCTION; then
+  if $VKSEL; then
     ui_print " "
     ui_print "   Ignoring warnings..."
   else
@@ -24,7 +24,7 @@ if [ -n "$SAMSUNG" ]; then
   ui_print "   *******************************************"
   ui_print "   Are you using a Custom Rom and do you want to install it?"
   ui_print "   Vol Up = Yes, Vol Down = No"
-  if $FUNCTION; then
+  if $VKSEL; then
     ui_print " "
     ui_print "   Ignoring warnings..."
   else
