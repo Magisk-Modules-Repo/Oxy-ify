@@ -102,9 +102,11 @@ set_permissions() {
 
 # Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
 unity_custom() {
+  if [ -f $VEN/build.prop ]; then BUILDS="/system/build.prop $VEN/build.prop"; else BUILDS="/system/build.prop"; fi
   PIXEL=$(grep -E "ro.product.manufacturer=Google|ro.product.vendor.brand=Google" "$BUILDS")
   SAMSUNG=$(grep -E "ro.product.manufacturer=Samsung|ro.product-vendor.brand=Samsung" "$BUILDS")
   VER=$(grep_prop version $TMPDIR/module.prop)
 }
+
 
 # Custom Functions for Install AND Uninstall - You can put them here
