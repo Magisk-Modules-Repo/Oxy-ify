@@ -68,11 +68,11 @@ REPLACE="
 print_modname() {
   ui_print " "
   ui_print "    *******************************************"
-  ui_print "    *Oxy-ify*"
+  ui_print "    *             Oxy-ify                     *"
   ui_print "    *******************************************"
-  ui_print "    *version 4.1*"
+  ui_print "    *             $VER                        *"
   ui_print "    *******************************************"
-  ui_print "    *by MarcAnt01*"
+  ui_print "    *             by MarcAnt01                *"
   ui_print "    *******************************************"
   ui_print "    Starting Unity installer"
   ui_print " "
@@ -104,6 +104,7 @@ set_permissions() {
 unity_custom() {
   PIXEL=$(grep -E "ro.product.manufacturer=Google|ro.product.vendor.brand=Google" "$BUILDS")
   SAMSUNG=$(grep -E "ro.product.manufacturer=Samsung|ro.product-vendor.brand=Samsung" "$BUILDS")
+  VER=$(grep_prop version $TMPDIR/module.prop)
 }
 
 # Custom Functions for Install AND Uninstall - You can put them here
