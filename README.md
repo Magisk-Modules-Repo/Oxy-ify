@@ -14,6 +14,10 @@ This module uses **Unity** template with volume keys addon. That means that you 
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
+### V  4.2
+- Updated Unity to 4.2 (same as module version lol);
+- Tones of bug fixes.
+
 ### V 4.1
 - Added default ringtone, notification sound and alarm;
 - Fixed conflicts with Google Sounds;
