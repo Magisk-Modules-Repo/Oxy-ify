@@ -14,6 +14,9 @@ This module uses **Unity** template with volume keys addon. That means that you 
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
+### V 4.2.1
+Fix for default ringtone, alarm and notification sounds.
+
 ### V  4.2
 - Updated Unity to 4.2 (same as module version lol);
 - Tones of bug fixes.
