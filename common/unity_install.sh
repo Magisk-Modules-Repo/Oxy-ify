@@ -48,7 +48,7 @@ if $VKSEL; then
 else
   ui_print " "
   ui_print "   Disabling boot animation..."
-  rm -rf "$TMPDIR/system/media/bootanimation.zip"
+  rm -rf $TMPDIR/system/media/bootanimation.zip
 fi
 
 ui_print " "
@@ -62,7 +62,7 @@ if $VKSEL; then
 else
   ui_print " "
   ui_print "   Disabling font..."
-  rm -rf "$TMPDIR"/system/fonts
+  rm -rf $TMPDIR/system/fonts
 fi
 
 ui_print " "
@@ -75,14 +75,14 @@ ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
   ui_print "   Enabling custom media sounds..."
-  prop_process "$TMPDIR"/common/propsoss.prop
+  prop_process $TMPDIR/common/propsoss.prop
 else
   ui_print " "
   ui_print "   Disabling custom media sounds..."
-  rm -rf "$TMPDIR"/system/media/audio
+  rm -rf $TMPDIR/system/media/audio
 fi
 
-if [ "$API" -ge 27 ]; then
+if [ $API -ge 27 ]; then
   ui_print " "
   ui_print " *******************************************"
   ui_print "   Do you want OnePlus Gallery?"
@@ -93,13 +93,13 @@ if [ "$API" -ge 27 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus Gallery..."
-    rm -rf "$TMPDIR"/system/priv-app/OPGallery
+    rm -rf $TMPDIR/system/priv-app/OPGallery
   fi
 else
-  rm -rf "$TMPDIR"/system/priv-app/OPGallery
+  rm -rf $TMPDIR/system/priv-app/OPGallery
 fi
 
-if [ "$API" -ge 24 ]; then
+if [ $API -ge 24 ]; then
   ui_print " "
   ui_print " *******************************************"
   ui_print "   Do you want OnePlus Camera?"
@@ -110,13 +110,13 @@ if [ "$API" -ge 24 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus Camera..."
-    rm -rf "$TMPDIR"/system/priv-app/OPCamera
+    rm -rf $TMPDIR/system/priv-app/OPCamera
   fi
 else
-  rm -rf "$TMPDIR"/system/priv-app/OPCamera
+  rm -rf $TMPDIR/system/priv-app/OPCamera
 fi
 
-if [ "$API" -ge 23 ]; then
+if [ $API -ge 23 ]; then
   ui_print " "
   ui_print " *******************************************"
   ui_print "   Do you want OnePlus Sound Recorder?"
@@ -127,13 +127,13 @@ if [ "$API" -ge 23 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus Sound Recorder..."
-    rm -rf "$TMPDIR"/system/priv-app/OPRecorder
+    rm -rf $TMPDIR/system/priv-app/OPRecorder
   fi
 else
-  rm -rf "$TMPDIR"/system/priv-app/OPRecorder
+  rm -rf $TMPDIR/system/priv-app/OPRecorder
 fi
 
-if [ "$API" -ge 25 ]; then
+if [ $API -ge 25 ]; then
   ui_print " "
   ui_print " *******************************************"
   ui_print "   Do you want OnePlus Weather and Widget?"
@@ -145,15 +145,15 @@ if [ "$API" -ge 25 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus Weather..."
-    rm -rf "$TMPDIR"/system/priv-app/OPWeather
-    rm -rf "$TMPDIR"/system/priv-app/OPWidget
+    rm -rf $TMPDIR/system/priv-app/OPWeather
+    rm -rf $TMPDIR/system/priv-app/OPWidget
   fi
 else
-  rm -rf "$TMPDIR"/system/priv-app/OPWeather
-  rm -rf "$TMPDIR"/system/priv-app/OPWidget
+  rm -rf $TMPDIR/system/priv-app/OPWeather
+  rm -rf $TMPDIR/system/priv-app/OPWidget
 fi
 
-if [ "$API" -ge 27 ]; then
+if [ $API -ge 27 ]; then
   ui_print " "
   ui_print " *******************************************"
   ui_print "   Do you want OnePlus Launcher?"
@@ -164,13 +164,13 @@ if [ "$API" -ge 27 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus Launcher..."
-    rm -rf "$TMPDIR"/system/priv-app/OPLauncher
+    rm -rf $TMPDIR/system/priv-app/OPLauncher
   fi
 else
-  rm -rf "$TMPDIR"/system/priv-app/OPLauncher
+  rm -rf $TMPDIR/system/priv-app/OPLauncher
 fi
 
-if [ "$API" -ge 23 ]; then
+if [ $API -ge 23 ]; then
   ui_print " "
   ui_print " *******************************************"
   ui_print "   Do you want OnePlus Calculator?"
@@ -181,8 +181,8 @@ if [ "$API" -ge 23 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus Calculator..."
-    rm -rf "$TMPDIR"/system/priv-app/OPCalculator
+    rm -rf $TMPDIR/system/priv-app/OPCalculator
   fi
 else
-  rm -rf "$TMPDIR"/system/priv-app/OPCalculator
+  rm -rf $TMPDIR/system/priv-app/OPCalculator
 fi
