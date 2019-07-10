@@ -14,6 +14,9 @@ This module uses **Unity** template with volume keys addon. That means that you 
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
+### V 4.2.3
+Bug fixes to the installer
+
 ### V 4.2.2
 Further bug fixes
 
