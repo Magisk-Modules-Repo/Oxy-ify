@@ -127,10 +127,10 @@ if [ $API -ge 23 ]; then
   else
     ui_print " "
     ui_print "   Disabling OnePlus Sound Recorder..."
-    rm -rf $TMPDIR/system/priv-app/OPRecorder
+    rm -rf $TMPDIR/system/priv-app/OPSoundRecorder
   fi
 else
-  rm -rf $TMPDIR/system/priv-app/OPRecorder
+  rm -rf $TMPDIR/system/priv-app/OPSoundRecorder
 fi
 
 if [ $API -ge 25 ]; then
