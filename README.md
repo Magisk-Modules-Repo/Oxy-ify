@@ -14,6 +14,9 @@ This module uses **Unity** template with volume keys addon. That means that you 
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
+### V 4.3
+App updates (Gallery to 3.5 and Weather to 2.5)
+
 ### V 4.2.3
 Bug fixes to the installer
 
