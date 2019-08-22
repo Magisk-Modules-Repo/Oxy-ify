@@ -66,16 +66,7 @@ REPLACE="
 # Set what you want to display when installing your module
 
 print_modname() {
-  ui_print " "
-  ui_print "    *******************************************"
-  ui_print "    *             Oxy-ify                     *"
-  ui_print "    *******************************************"
-  ui_print "    *             $VER                        *"
-  ui_print "    *******************************************"
-  ui_print "    *             by MarcAnt01                *"
-  ui_print "    *******************************************"
-  ui_print "    Starting Unity installer"
-  ui_print " "
+  center_and_print # Replace this line if using custom print stuff
   unity_main # Don't change this line
 }
 
@@ -105,7 +96,6 @@ unity_custom() {
   if [ -f $VEN/build.prop ]; then BUILDS="/system/build.prop $VEN/build.prop"; else BUILDS="/system/build.prop"; fi
   PIXEL=$(grep -E "ro.product.manufacturer=Google|ro.product.vendor.brand=Google" "$BUILDS")
   SAMSUNG=$(grep -E "ro.product.manufacturer=Samsung|ro.product-vendor.brand=Samsung" "$BUILDS")
-  VER=$(grep version $TMPDIR/module.prop)
 }
 
 
