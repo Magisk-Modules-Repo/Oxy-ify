@@ -14,6 +14,10 @@ This module uses **Unity** template with volume keys addon. That means that you 
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
 
+### V 4.3.1
+- [Fixes for OP Gallery](https://github.com/Magisk-Modules-Repo/Oxy-ify/commit/b48d41b294160dd86801f05b0cce1b7cccce9246);
+- Updated Unity to 4.4
+
 ### V 4.3
 App updates (Gallery to 3.5 and Weather to 2.5)
 
