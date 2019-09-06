@@ -153,23 +153,6 @@ else
   rm -rf $TMPDIR/system/priv-app/OPWidget
 fi
 
-if [ $API -ge 27 ]; then
-  ui_print " "
-  ui_print " *******************************************"
-  ui_print "   Do you want OnePlus Launcher?"
-  ui_print "   Vol Up = Yes, Vol Down = No"
-  if $VKSEL; then
-    ui_print " "
-    ui_print "   Enabling OnePlus Launcher..."
-  else
-    ui_print " "
-    ui_print "   Disabling OnePlus Launcher..."
-    rm -rf $TMPDIR/system/priv-app/OPLauncher
-  fi
-else
-  rm -rf $TMPDIR/system/priv-app/OPLauncher
-fi
-
 if [ $API -ge 23 ]; then
   ui_print " "
   ui_print " *******************************************"
