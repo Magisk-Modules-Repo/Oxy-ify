@@ -169,3 +169,20 @@ if [ $API -ge 23 ]; then
 else
   rm -rf $TMPDIR/system/priv-app/OPCalculator
 fi
+
+if [ $API -ge 24 ]; then
+  ui_print " "
+  ui_print " *******************************************"
+  ui_print "   Do you want OnePlus Screen Recorder?"
+  ui_print "   Vol Up = Yes, Vol Down = No"
+  if $VKSEL; then
+    ui_print " "
+    ui_print "   Enabling OnePlus Screen Recorder..."
+  else
+    ui_print " "
+    ui_print "   Disabling OnePlus Screen Recorder..."
+    rm -rf $TMPDIR/system/priv-app/OPScreenRecorder
+  fi
+else
+  rm -rf $TMPDIR/system/priv-app/OPScreenRecorder
+fi
