@@ -1,3 +1,7 @@
+if [ $API -eq 29 ] ; then
+  abort " Android 10 isn't supported yet"
+fi
+
 if [ -n "$PIXEL" ]; then
   ui_print " "
   ui_print "   Oxy-ify doesn't support Google Pixel devices on stock Rom!"
