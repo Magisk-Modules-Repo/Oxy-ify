@@ -4,7 +4,7 @@ Oxy-ify is a fantastic Magisk Module that will turn your Android phone into a On
 
 - the Oxygen OS boot animation;
 - the Oxygen OS media sounds;
-- the Oxygen OS apps (Camera, Gallery, Sound Recorder, Weather and Widget);
+- the Oxygen OS apps (Camera, Gallery, Sound and Screen Recorder, Weather and Widget);
 - the OnePlus Widget;
 - the OnePlus Slate font.
 
@@ -13,6 +13,10 @@ This module uses **Unity** template with volume keys addon. That means that you 
 # Changelog
 
 **Only versions after 2.2 were distributed through Magisk Modules Repo**
+
+### V 4.5
+- Added Screen Recorder;
+- Temporary block installation on Android 10.
 
 ### V 4.4
 - Updated OP Gallery to 3.7;
