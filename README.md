@@ -16,7 +16,7 @@ This module uses **Unity** template with volume keys addon. That means that you 
 
 ### V 4.5
 - Added Screen Recorder;
-- Temporary block installation on Android 10.
+- Temporarily block installation on Android 10.
 
 ### V 4.4
 - Updated OP Gallery to 3.7;
@@ -106,7 +106,10 @@ Initial release.
 -   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
 -   [![Android Lollipop+](https://img.shields.io/badge/Lollipop-5.0+-lightgrey.svg)](https://www.android.com/versions/lollipop-5-0/)
 
+**Android 10** is currently unsupported.
+
 All AOSP-based Roms and stock Roms are supported, even MIUI and EMUI.
+
 **Google Pixel** devices with stock OS and **Samsung One UI** are **not supported**, don't flash there.
 
 # How to reach out to me
