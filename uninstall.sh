@@ -1,13 +1,6 @@
-if $SYSOVER || $DIRSEPOL; then
-  rm -f $INFO; mount -o rw,remount /system
-  [ -L /system/vendor ] && mount -o rw,remount /vendor
-fi
-
-FILE=$INFO
-[ -f $MODPATH/$MODID-files ] && FILE=$MODPATH/$MODID-files
 if [ -f $FILE ]; then
   while read LINE; do
-    if [ "$(echo -n $LINE | tail -c 1)" == "~" ] || [ "$(echo -n $LINE | tail -c 9)" == "NORESTORE" ]; then
+    if [ "$(echo -n $LINE | tail -c 1)" == "~" ]; then
       continue
     elif [ -f "$LINE~" ]; then
       mv -f $LINE~ $LINE
@@ -19,9 +12,5 @@ if [ -f $FILE ]; then
       done
     fi
   done < $FILE
-fi
-
-if $SYSOVER || $DIRSEPOL; then
-  rm -f $INFO; mount -o ro,remount /system
-  [ -L /system/vendor ] && mount -o ro,remount /vendor
+  rm -f $FILE $(dirname $FILE)/.$MODID-module.prop
 fi
