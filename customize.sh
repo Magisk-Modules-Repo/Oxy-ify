@@ -37,7 +37,7 @@ REPLACE="
 "
 
 ##########################################################################################
-# Custom Logic
+# Permissions
 ##########################################################################################
 
 set_permissions() {
@@ -59,24 +59,6 @@ set_permissions() {
   # set_perm /data/local/tmp/file.txt 0 0 644
 }
 
-# Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
-custom() {
-  S=/system
-  SP=/system/product
-  P=/product
-  F=/fonts
-  A=/media/audio
-  G=/priv-app/OPGallery
-  CAM=/priv-app/OPCamera
-  SNDR=/priv-app/OPSoundRecorder
-  WEAT=/priv-app/OPWeather
-  WIDG=/priv-app/OPWidget
-  CALC=/priv-app/OPCalculator
-  SCRR=/priv-app/OPScreenRecorder
-}
-
-# Custom Functions for Install AND Uninstall - You can put them here
-
 ##########################################################################################
 # MMT Extended Logic - Don't modify anything after this
 ##########################################################################################
@@ -84,3 +66,19 @@ custom() {
 SKIPUNZIP=1
 unzip -qjo "$ZIPFILE" 'common/functions.sh' -d $TMPDIR >&2
 . $TMPDIR/functions.sh
+
+# Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
+custom() {
+ S=/system
+ SP=/system/product
+ P=/product
+ F=/fonts
+ A=/media/audio
+ G=/priv-app/OPGallery
+ CAM=/priv-app/OPCamera
+ SNDR=/priv-app/OPSoundRecorder
+ WEAT=/priv-app/OPWeather
+ WIDG=/priv-app/OPWidget
+ CALC=/priv-app/OPCalculator
+ SCRR=/priv-app/OPScreenRecorder
+}
