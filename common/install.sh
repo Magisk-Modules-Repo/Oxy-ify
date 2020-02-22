@@ -6,7 +6,7 @@ ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   ui_print " "
   ui_print "   Enabling font..."
-  if [ -d "$MIRROR$P" ] || [ -d "$MIRROR$SP" ]; then
+  if [ -d "$ORIGDIR$P" ] || [ -d "$ORIGDIR$SP" ]; then
     cp_ch -r "$MODPATH/Oxy-ify$F" "$MODPATH$SP$F"
   else
     cp_ch -r "$MODPATH/Oxy-ify$F" "$MODPATH$S$F"
@@ -24,7 +24,7 @@ ui_print "   Vol Up = Yes, Vol Down = No"
 if $VKSEL; then
   prop_process "$MODPATH/common/propsoss.prop"
   ui_print "    Enabling custom media sounds... "
-  if [ -d "$MIRROR$P" ] || [ -d "$MIRROR$SP" ]; then
+  if [ -d "$ORIGDIR$P" ] || [ -d "$ORIGDIR$SP" ]; then
     cp_ch -r "$MODPATH/Oxy-ify$A" "$MODPATH$SP$A"
   else
         cp_ch -r "$MODPATH/Oxy-ify$A" "$MODPATH$S$A"
@@ -42,7 +42,7 @@ if [ $API -ge 27 ]; then
   if $VKSEL; then
     ui_print " "
     ui_print "   Enabling OnePlus Gallery..."
-    if [ -d "$MIRROR$P" ] || [ -d "$MIRROR$SP" ]; then
+    if [ -d "$ORIGDIR$P" ] || [ -d "$ORIGDIR$SP" ]; then
       cp_ch -r "$MODPATH/Oxy-ify$G" "$MODPATH$SP$G"
     else
       cp_ch -r "$MODPATH/Oxy-ify$G" "$MODPATH$S$G"
