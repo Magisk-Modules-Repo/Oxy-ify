@@ -81,4 +81,5 @@ custom() {
  WIDG=/priv-app/OPWidget
  CALC=/priv-app/OPCalculator
  SCRR=/priv-app/OPScreenRecorder
+ ORIGDIR="$MAGISKTMP/mirror"
 }
