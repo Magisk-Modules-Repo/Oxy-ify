@@ -66,20 +66,3 @@ set_permissions() {
 SKIPUNZIP=1
 unzip -qjo "$ZIPFILE" 'common/functions.sh' -d $TMPDIR >&2
 . $TMPDIR/functions.sh
-
-# Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
-custom() {
- S=/system
- SP=/system/product
- P=/product
- F=/fonts
- A=/media/audio
- G=/priv-app/OPGallery
- CAM=/priv-app/OPCamera
- SNDR=/priv-app/OPSoundRecorder
- WEAT=/priv-app/OPWeather
- WIDG=/priv-app/OPWidget
- CALC=/priv-app/OPCalculator
- SCRR=/priv-app/OPScreenRecorder
- ORIGDIR="$MAGISKTMP/mirror"
-}
