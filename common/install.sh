@@ -38,3 +38,8 @@ if [ $API -ge 27 ]; then
     rm -rf $MODPATH/system/priv-app
   fi
 fi
+
+if [ -d $ORIGDIR/product ]; then
+  mkdir $MODPATH/system/product
+  mv -f $MODPATH/system/fonts $MODPATH/system/media $MODPATH/system/priv-app $MODPATH/system/product/
+fi
