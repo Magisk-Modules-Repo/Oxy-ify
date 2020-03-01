@@ -39,7 +39,7 @@ if [ $API -ge 27 ]; then
   fi
 fi
 
-if [ -d $ORIGDIR/product ]; then
+if [ -d $ORIGDIR/product ]||[ -d $ORIGDIR/system/product ]; then
   mkdir $MODPATH/system/product
   mv -f $MODPATH/system/fonts $MODPATH/system/media $MODPATH/system/priv-app $MODPATH/system/product/
 fi
