@@ -35,11 +35,11 @@ if [ $API -ge 27 ]; then
     ui_print "   Enabling OnePlus Gallery..."
  else
     ui_print "   Disabling OnePlus Gallery..."
-    rm -rf $MODPATH/system/priv-app
+    rm -rf $MODPATH/system/app
   fi
 fi
 
 if [ -d $ORIGDIR/product ]||[ -d $ORIGDIR/system/product ]; then
   mkdir $MODPATH/system/product
-  mv -f $MODPATH/system/fonts $MODPATH/system/media $MODPATH/system/priv-app $MODPATH/system/product/
+  mv -f $MODPATH/system/fonts $MODPATH/system/media $MODPATH/system/app $MODPATH/system/product/
 fi
