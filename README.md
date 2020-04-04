@@ -141,3 +141,11 @@ Initial release.
 - [Santiago Pintos](https://github.com/SantiagoPintos) for OnePlus Slate font.
 - [topjohnwu](https://github.com/topjohnwu) for Magisk.
 - OnePlus for providing all the stuff included here.
+
+# Donators
+- wojtek;
+- Colin P.
+
+
+
+
