@@ -2,17 +2,42 @@
 
 Oxy-ify is a fantastic Magisk Module that will turn your Android phone into a OnePlus device by adding:
 
-- the Oxygen OS boot animation;
-- the Oxygen OS media sounds;
-- the Oxygen OS apps (Camera, Gallery, Sound and Screen Recorder, Weather and Widget);
-- the OnePlus Widget;
-- the OnePlus Slate font.
+- Oxygen OS media sounds;
+- Oxygen OS apps (Camera, Gallery, Sound and Screen Recorder, Weather);
+- OnePlus Widget;
+- OnePlus Slate font.
 
-This module uses **Unity** template with volume keys addon. That means that you can choose to install just what you prefer during the installation process.
+
+# FAQ
+
+Read this before asking anything, otherwise your question/request will be ignored:
+1. *What Roms is it compatible with?* The module is supposed to work with most of custom and propietary Roms (even if it might not work for some Roms very different from AOSP)
+2. *What Magisk version does it require?* Magisk 19.0 is the minimum version for modules based on the new template
+3. *Why is the size of the Magisk module so huge?* The module includes the apps apk files, which happen to be very huge (OnePlus Gallery for example is 100MB)
+4. *What Android versions does it support?* The module should work from Marshmallow, even if most apps require recent Android versions to be working.
+5. *How to uninstall?* Reflash the module from recovery or uninstall through Magisk Manager
+6. *Why is x-app not working?* The module is thought to have a collection of OnePlus apps, I don't personally fix then, I take the apk from OnePlus or from some modders that modify them. Crashes or something in particular not working won't be fixed
+
+# How to reach out to me
+-   [![Thread XDA](https://img.shields.io/badge/XDA-Thread-orange.svg)](https://forum.xda-developers.com/apps/magisk/oxy-ify-magisk-module-add-oxygen-os-t3888094)
+-   [![Telegram Group](https://img.shields.io/badge/Telegram-Group-blue.svg)](https://t.me/Oxyify)
+
+# [Donation](https://www.paypal.me/filippofedeli)
+If you wish to support my work, it'll be very appreciated.
+
+# License agreement
+All the components in this mod are protected under the [GPL-V2 license agreement](https://github.com/MarcAnt01/Oxy-ify/blob/master/LICENSE).
+ OnePlus Widget is a modified app kindly provided by [erayrafet](https://forum.xda-developers.com/member.php?u=6901118) and OnePlus Screen Recorder by [rakeshb4r](https://forum.xda-developers.com/member.php?u=6520464). If you intend to include those in your own mod out of Oxy-ify, first, you must ask them for t permission.
 
 # Changelog
 
-**Only versions after 2.2 were distributed through Magisk Modules Repo**
+### V 5.0
+- Android 10 support;
+- Module rewritten from scratch, based on MMT-Ex by Zackptg5;
+- No more support for SuperSU and rootless users;
+- No more bootanimation (to work properly with Android 10 it needs some improvements);
+- Updated OnePlus Gallery and Weather.
+
 
 ### V 4.5
 - Added Screen Recorder;
@@ -77,6 +102,8 @@ Fix for default ringtone, alarm and notification sounds.
 - Updated modded OnePlus Widget to 1.1.x;
 - Fixed boot animation applied with aborted option.
 
+### This versions weren't distributed through Magisk Modules Repo
+
 ### V 2.2
 Added modded OnePlus Widget and OnePlus Weather.
 
@@ -102,36 +129,23 @@ Added modded OnePlus Widget and OnePlus Weather.
 ### V 1.0
 Initial release.
 
-# Requirements
--   [![Magisk](https://img.shields.io/badge/Magisk-18%2B-00B39B.svg)](https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445)
--   [![Android Lollipop+](https://img.shields.io/badge/Lollipop-5.0+-lightgrey.svg)](https://www.android.com/versions/lollipop-5-0/)
 
-**Android 10** is currently unsupported.
-
-All AOSP-based Roms and stock Roms are supported, even MIUI and EMUI.
-
-**Google Pixel** devices with stock OS and **Samsung One UI** are **not supported**, don't flash there.
-
-# How to reach out to me
--   [![Thread XDA](https://img.shields.io/badge/XDA-Thread-orange.svg)](https://forum.xda-developers.com/apps/magisk/oxy-ify-magisk-module-add-oxygen-os-t3888094)
--   [![Telegram Group](https://img.shields.io/badge/Telegram-Group-blue.svg)](https://t.me/Oxyify)
-
-
-# Wiki
-Visit [the Oxy-ify wiki](https://github.com/MarcAnt01/Oxy-ify/wiki) for further information about supported devices, apps, and more.
-
-# [Donation](https://www.paypal.me/filippofedeli)
-I do not ask for any kind of donation, I just leave my PayPal donation link if you feel like.
-
-# License agreement
-All the components in this mod are protected under the [GPL-V3 license agreement](https://github.com/MarcAnt01/Oxy-ify/blob/master/LICENSE).
-The OnePlus Widget and the Sound recorder were kindly provided by [erayrafet](https://forum.xda-developers.com/member.php?u=6901118). If you intend to include those in your own mod out of Oxy-ify, first, you must ask him for a permission.
 
 # Credits
-- [thehappydinoa](https://github.com/thehappydinoa) for initial Unity implementation.
+- [Zackptg5](https://github.com/Zackptg5) for MMT-Ex (the base of this module) and for providing help;
 - [JohnFawkes](https://github.com/JohnFawkes) for helping me to solve bugs.
-- [erayrafet](https://forum.xda-developers.com/member.php?u=6901118) for modded OnePlus Sound Recorder and Widget.
-- [Santiago Pintos](https://github.com/SantiagoPintos) for the OnePlus Slate font.
-- [Zackptg5](https://github.com/Zackptg5) for Unity template.
+- All the developers that helped me in the Telegram developers group (special mention to [Skittles9823](https://github.com/skittles9823), [LordVicky](https://github.com/LordVicky), [Shadowstep](https://github.com/nipunnarang))
+- [thehappydinoa](https://github.com/thehappydinoa) for initial Unity implementation (old Oxy-ify versions)
+- [erayrafet](https://forum.xda-developers.com/member.php?u=6901118) for modded OnePlus Widget.
+- [rakeshb4r](https://forum.xda-developers.com/member.php?u=6520464) for modded OnePlus Screen Recorder
+- [Santiago Pintos](https://github.com/SantiagoPintos) for OnePlus Slate font.
 - [topjohnwu](https://github.com/topjohnwu) for Magisk.
 - OnePlus for providing all the stuff included here.
+
+# Donators
+- wojtek;
+- Colin P.
+
+
+
+
