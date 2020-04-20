@@ -31,6 +31,11 @@ All the components in this mod are protected under the [GPL-V2 license agreement
 
 # Changelog
 
+### V 5.1
+- Updated modded Widget to 1.2;
+- Fixed OnePlus Slate font;
+- Temporary downgraded to OP Gallery 3.7.x to avoid force closes on some devices.
+
 ### V 5.0
 - Android 10 support;
 - Module rewritten from scratch, based on MMT-Ex by Zackptg5;
@@ -145,7 +150,3 @@ Initial release.
 # Donators
 - wojtek;
 - Colin P.
-
-
-
-
