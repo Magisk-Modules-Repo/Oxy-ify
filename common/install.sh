@@ -116,9 +116,3 @@ if [ $API -ge 23 ]; then
 else
   rm -rf $MODPATH/system/app/OPCalculator
 fi
-
-
-if [ -d $ORIGDIR/product ]||[ -d $ORIGDIR/system/product ]; then
-  mkdir $MODPATH/system/product
-  mv -f $MODPATH/system/fonts $MODPATH/system/media $MODPATH/system/app $MODPATH/system/product/
-fi
