@@ -16,7 +16,9 @@ Read this before asking anything, otherwise your question/request will be ignore
 3. *Why is the size of the Magisk module so huge?* The module includes the apps apk files, which happen to be very huge (OnePlus Gallery for example is 100MB)
 4. *What Android versions does it support?* The module should work from Marshmallow, even if most apps require recent Android versions to be working.
 5. *How to uninstall?* Reflash the module from recovery or uninstall through Magisk Manager
-6. *Why is x-app not working?* The module is thought to have a collection of OnePlus apps, I don't personally fix then, I take the apk from OnePlus or from some modders that modify them. Crashes or something in particular not working won't be fixed
+6. *Why is x-app not working?* The module is thought to have a collection of OnePlus apps, I don't personally fix then, I take the apk from OnePlus or from some modders that modify them. Crashes or something in particular not working won't be fixed.
+7. *Where is scren recorder? I can't find it* Just go to quick settings and add it, you won't find it in your apps list.
+8. *Any ETA?* No-one pays me to work within a deadline.
 
 # How to reach out to me
 -   [![Thread XDA](https://img.shields.io/badge/XDA-Thread-orange.svg)](https://forum.xda-developers.com/apps/magisk/oxy-ify-magisk-module-add-oxygen-os-t3888094)
