@@ -39,7 +39,7 @@ if [ $API -ge 27 ]; then
   fi
 fi
 
-if [ $API -ge 24 ]; then
+if [ $API -ge 24 || $API -le 29 ]; then
   ui_print " "
   ui_print " *******************************************"
   ui_print "   Do you want OnePlus Screen Recorder?"
