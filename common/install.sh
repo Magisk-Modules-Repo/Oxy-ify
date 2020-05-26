@@ -116,3 +116,17 @@ if [ $API -ge 23 ]; then
 else
   rm -rf $MODPATH/system/app/OPCalculator
 fi
+
+f [ $API -ge 28 ]; then
+  ui_print " "
+  ui_print " *******************************************"
+  ui_print "   Do you want OnePlus Wallpapers?"
+  ui_print "   Vol Up = Yes, Vol Down = No"
+  ui_print " "
+  if $VKSEL; then
+    ui_print "   Enabling OnePlus Wallpapers..."
+ else
+    ui_print "   Disabling OnePlus Wallpapers..."
+    rm -rf $MODPATH/system/app/OPWallpapers
+  fi
+fi
