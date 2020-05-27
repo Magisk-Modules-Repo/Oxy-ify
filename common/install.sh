@@ -39,7 +39,7 @@ if [ $API -ge 27 ]; then
   fi
 fi
 
-if [ $API -ge 24 || $API -le 29 ]; then
+if [ $API -ge 24] && [ $API -le 28 ]; then
   ui_print " "
   ui_print " *******************************************"
   ui_print "   Do you want OnePlus Screen Recorder?"
@@ -117,7 +117,7 @@ else
   rm -rf $MODPATH/system/app/OPCalculator
 fi
 
-f [ $API -ge 28 ]; then
+if [ $API -ge 28 ]; then
   ui_print " "
   ui_print " *******************************************"
   ui_print "   Do you want OnePlus Wallpapers?"
