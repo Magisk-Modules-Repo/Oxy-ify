@@ -5,7 +5,12 @@ Oxy-ify is a fantastic Magisk Module that will turn your Android phone into a On
 - Oxygen OS media sounds;
 - Oxygen OS apps (Camera, Gallery, Sound and Screen Recorder, Weather);
 - OnePlus Widget;
+- OnePlus Wallpapers;
 - OnePlus Slate font.
+
+Most of the apks of the apps are considered safe since directly come from OnePlus Roms or Play Store updates.
+OnePlus Widget and Screen Recorder have modified by other devs and posted on XDA, so they are safe, as well.
+Wallpaper picker is a custom app forked from EvolutionX wallpaper picker. You can find the source code [here](https://github.com/MarcAnt01/packages_apps_Papers).
 
 # FAQ
 
@@ -29,9 +34,15 @@ If you wish to support my work, it'll be very appreciated.
 
 # License agreement
 All the components in this mod are protected under the [GPL-V2 license agreement](https://github.com/MarcAnt01/Oxy-ify/blob/master/LICENSE).
- OnePlus Widget is a modified app kindly provided by [erayrafet](https://forum.xda-developers.com/member.php?u=6901118) and OnePlus Screen Recorder by [rakeshb4r](https://forum.xda-developers.com/member.php?u=6520464). If you intend to include those in your own mod out of Oxy-ify, first, you must ask them for t permission.
+ OnePlus Widget is a modified app kindly provided by [erayrafet](https://forum.xda-developers.com/member.php?u=6901118) and OnePlus Screen Recorder by [rakeshb4r](https://forum.xda-developers.com/member.php?u=6520464). If you intend to include those in your own mod out of Oxy-ify, first, you must ask them for the permission.
 
 # Changelog
+
+### V 5.2
+- Added wallpaper picker;
+- Updated calculator to 2.0;
+- Updated MMT-Ex to 1.5;
+- Bug fixes.
 
 ### V 5.1
 - Updated modded Widget to 1.2;
@@ -143,8 +154,9 @@ Initial release.
 - [JohnFawkes](https://github.com/JohnFawkes) for helping me to solve bugs.
 - All the developers that helped me in the Telegram developers group (special mention to [Skittles9823](https://github.com/skittles9823), [LordVicky](https://github.com/LordVicky), [Shadowstep](https://github.com/nipunnarang))
 - [thehappydinoa](https://github.com/thehappydinoa) for initial Unity implementation (old Oxy-ify versions)
-- [erayrafet](https://forum.xda-developers.com/member.php?u=6901118) for modded OnePlus Widget.
-- [rakeshb4r](https://forum.xda-developers.com/member.php?u=6520464) for modded OnePlus Screen Recorder
+- [erayrafet](https://forum.xda-developers.com/member.php?u=6901118) for modded OnePlus Widget and general help for implementing the wallpaper picker.
+- [rakeshb4r](https://forum.xda-developers.com/member.php?u=6520464) for modded OnePlus Screen Recorder.
+- [EvolutionX team working on wallpaper picker](https://github.com/Evolution-X-Legacy/packages_apps_Papers/graphs/contributors) for the base for wallpaper picker.
 - [Santiago Pintos](https://github.com/SantiagoPintos) for OnePlus Slate font.
 - [topjohnwu](https://github.com/topjohnwu) for Magisk.
 - OnePlus for providing all the stuff included here.
