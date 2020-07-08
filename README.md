@@ -15,15 +15,16 @@ Wallpaper picker is a custom app forked from EvolutionX wallpaper picker. You ca
 # FAQ
 
 Read this before asking anything, otherwise your question/request will be ignored:
-1. *What Roms is it compatible with?* The module is supposed to work with most of custom and propietary Roms (even if it might not work for some Roms very different from AOSP)
-2. *What Magisk version does it require?* Magisk 19.0 is the minimum version for modules based on the new template
-3. *Why is the size of the Magisk module so huge?* The module includes the apps apk files, which happen to be very huge (OnePlus Gallery for example is 100MB)
-4. *What Android versions does it support?* The module should work from Marshmallow, even if most apps require recent Android versions to be working.
-5. *How to uninstall?* Reflash the module from recovery or uninstall through Magisk Manager
-6. *Why is x-app not working?* The module is thought to have a collection of OnePlus apps, I don't personally fix then, I take the apk from OnePlus or from some modders that modify them. Crashes or something in particular not working won't be fixed.
-7. *Where is scren recorder? I can't find it* Just go to quick settings and add it, you won't find it in your apps list.
-8. *I just want font and calculator* During the installation you can choose what to install.
-9. *Any ETA?* No-one pays me to work within a deadline.
+1. *How to install?* This question sounds stupid to me, but unluckily it's not the same for every person. Open Magisk Manager, go to downloads section and look for it. I don't provide the zips anywhere, if you flash it outside of the repo, do it at your own risk.
+2. *What Roms is it compatible with?* The module is supposed to work with most of custom and propietary Roms (even if it might not work for some Roms very different from AOSP)
+3. *What Magisk version does it require?* Magisk 19.0 is the minimum version for modules based on the new template
+4. *Why is the size of the Magisk module so huge?* The module includes the apps apk files, which happen to be very huge (OnePlus Gallery for example is 100MB)
+5. *What Android versions does it support?* The module should work from Marshmallow, even if most apps require recent Android versions to be working.
+6. *How to uninstall?* Reflash the module from recovery or uninstall through Magisk Manager
+7. *Why is x-app not working?* The module is thought to have a collection of OnePlus apps, I don't personally fix then, I take the apk from OnePlus or from some modders that modify them. Crashes or something in particular not working won't be fixed.
+8. *Where is screen recorder? I can't find it* Just go to quick settings and add it, you won't find it in your apps list.
+9. *I just want font and calculator* During the installation you can choose what to install.
+10. *Any ETA?* No-one pays me to work within a deadline.
 
 # How to reach out to me
 -   [![Thread XDA](https://img.shields.io/badge/XDA-Thread-orange.svg)](https://forum.xda-developers.com/apps/magisk/oxy-ify-magisk-module-add-oxygen-os-t3888094)
