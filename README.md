@@ -39,6 +39,11 @@ All the components in this mod are protected under the [GPL-V2 license agreement
 
 # Changelog
 
+### V. 5.3 (final version)
+- Fixed OnePlus Gallery;
+- Updated media sounds from OnePlus 8 line;
+- update MMT-ex template to 1.6.
+
 ### V 5.2
 - Added wallpaper picker;
 - Updated calculator to 2.0;
