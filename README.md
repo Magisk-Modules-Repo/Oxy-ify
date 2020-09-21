@@ -1,5 +1,9 @@
 # Oxy-ify
 
+# THE PROJECT IS ARCHIVED
+For more info check [here](https://forum.xda-developers.com/showpost.php?p=83550327&postcount=294)
+
+
 Oxy-ify is a fantastic Magisk Module that will turn your Android phone into a OnePlus device by adding:
 
 - Oxygen OS media sounds;
